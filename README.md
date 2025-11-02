@@ -48,6 +48,7 @@ Example view:
 +-------------------------------------+
 
 📋 Modal Form Behavior
+
 🧍‍♂️ Step 1: Open the Form
 
 When the user clicks on Open Form, the modal appears.
@@ -75,11 +76,17 @@ The Submit button has the class name:
 <button className="submit-button">Submit</button>
 
 ⚠️ Validation Rules and Alert Messages
+
 Validation Case	Behavior / Message
+
 Empty field	Show a message beside the field: “Please fill out this field.”
+
 Invalid email (missing “@”)	alert("Invalid email. Please check your email address.")
+
 Invalid phone number (not 10 digits)	alert("Invalid phone number. Please enter a 10-digit phone number.")
+
 Future date of birth	alert("Invalid date of birth. Please enter a valid past date.")
+
 ✅ Successful Submission
 
 If all the fields are filled correctly:
@@ -150,11 +157,17 @@ const handleSubmit = (e) => {
 };
 
 ⚙️ Tech Stack
+
 Technology	Purpose
+
 ReactJS	UI development and state management
+
 HTML5	Form structure
+
 CSS3 (Flexbox)	Modal styling and layout
+
 JavaScript (ES6)	Input validation and event handling
+
 🚀 Installation and Setup
 
 Clone the Repository
