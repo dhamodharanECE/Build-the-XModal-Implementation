@@ -23,7 +23,7 @@ const App = () => {
   };
 
   const ValidPhoneNumber = (phonenumber) => {
-    return /^\d{10}$/.test(phonenumber);
+    return /^[0-9]{10}$/.test(phonenumber.replace(/\D/g, ""));
   };
 
   const VailedDOB = (dateofbirth) => {
@@ -50,7 +50,7 @@ const App = () => {
       alert('Invalid phone number. Please enter a 10-digit phone number.');
       return;
     }
-
+    
     alert('Form submitted successfully!');
     console.log('Form submitted');
   };
@@ -71,10 +71,10 @@ const App = () => {
             left: 0,
             right: 0,
             bottom: 0,
-            backgroundColor: 'rgba(0,0,0,0.5)',
             display: 'flex',
             justifyContent: 'center',
-            alignItems: 'center'
+            alignItems: 'center',
+            backgroundColor:'goldenrod'
           }}
         >
           <div
@@ -91,7 +91,7 @@ const App = () => {
             <form onSubmit={handleSubmit}>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                 <label>User Name:</label>
-                <input
+                <input 
                   type="text"
                   id="username"
                   placeholder="User Name"
@@ -113,8 +113,8 @@ const App = () => {
                 <label>Phone Number:</label>
                 <input
                   type="number"
-                  id="phone"
-                  placeholder="Phone Number"
+                  id="phonenumber"
+                  placeholder="Phone Number" 
                   onChange={handleChange}
                   value={formData.phonenumber}
                   required
@@ -123,7 +123,7 @@ const App = () => {
                 <label>Date of Birth:</label>
                 <input
                   type="date"
-                  id="dob"
+                  id="dateofbirth"
                   placeholder="Date of Birth"
                   onChange={handleChange}
                   value={formData.dateofbirth}
