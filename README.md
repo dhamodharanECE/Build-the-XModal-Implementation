@@ -204,11 +204,11 @@ Styling with pure CSS and Flexbox
 
 # 📸 UI Preview:
 
-# Open-Model
+# Open-Model:
 
 <img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/70f5a867-39ad-41d8-b97a-e0718eaf4249" />
 
-# Login Form
+# Login Form:
 
 <img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/ad5d2731-bf96-45cd-bedd-4ec226c37140" />
 
